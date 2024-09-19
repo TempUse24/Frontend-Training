@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function sayGreetings() {
+        alert("Olaaaaa");
+      }
+      function showSeason() {
+        var month = new Date().getMonth();
+        if (month == 7) alert("Monsoon");
+      }
+
+      function green() {
+        document.getElementById("greendiv").style.backgroundColor("green");
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <input type="button" value="greet" onclick="sayGreetings()" />
+
+      <input type="button" value="season" onclick="showSeason()" />
+      <input type="button" value="green" onclick="green()" />
+      <input type="button" value="blue" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 98.5vw;
+  min-height: 97.5vh;
+  background-color: black;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whole {
+  width: 50vmin;
+  height: 50vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+  border: 2px solid white;
+}
+
+.r1,
+.r2,
+.r3 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.r1c1,
+.r1c2,
+.r1c3,
+.r2c1,
+.r2c2,
+.r2c3,
+.r3c1,
+.r3c2,
+.r3c3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+  border: 3px solid #ffffff;
+}
+
+/* Styling for each individual cell */
+.cell {
+  border: 1px solid white;
+}
